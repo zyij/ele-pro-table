@@ -1,0 +1,59 @@
+{
+  "name": "ele-pro-table",
+  "version": "2.1.0",
+  "type": "module",
+  "description": "对elementPlus进行二次封装的组件库",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "element-plus",
+    "ui组件库二次封装"
+  ],
+  "author": "penk",
+  "email": "zy.gf@foxmail.com",
+  "homepage": "https://github.com/zyij/ele-pro-table",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyij/ele-pro-table"
+  },
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.3.5"
+  },
+  "peerDependenciesMeta":{
+    "element-plus":{
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "element-plus": "^2.3.5",
+    "sass": "^1.62.1",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.2",
+    "unplugin-vue-components": "^0.24.1",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  },
+  "main": "./dist/ele-pro-table.umd.js",
+  "module": "./dist/ele-pro-table.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ele-pro-table.es.js",
+      "require": "./dist/ele-pro-table.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  }
+}
